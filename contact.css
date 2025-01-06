@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://moisluh.ru/wp-content/uploads/2020/04/background-contacts.jpg');
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin: 5px 0;
+}
+
+.sect {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 80%;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-form {
+    padding-left: 30px;
+}
+
+.form-fields input,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-fields textarea {
+    resize: none;
+}
+
+.buttons input {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons input[type="reset"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.buttons input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+}
+.dashboard-link{
+    display: flex;
+    justify-content: start;
+   
+    text-decoration: none;
+    border: 1px solid rgb(20, 18, 18);
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: aliceblue;
+    background-color: black;
+   padding: 10px;
+   
+}
+.dashboard-link:hover{
+    background-color: #fff;
+    color: black;
+    transform: translateY(-5px);
+    
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow:10px 10px 15px  #fff;
+}
+.ph{
+    background-color: white;
+    border-radius: 10px;
+    padding: 2px;
+}

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container {
+    max-width: 900px;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+.projects-container:hover {
+    transform: scale(1);
+}
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.project:hover {
+    background-color: #e8e8e8;
+}
+.project-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e3c72;
+    transition: color 0.3s ease;
+}
+.project-title:hover {
+    color: #fc4a1a;
+}
+.project-description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.project-link {
+    display: inline-block;
+    background: #1e3c72;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.project-link:hover {
+    background: #2a5298;
+    transform: translateY(-4px);
+}
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    text-align: center;
+    background: #fc4a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.contact-button:hover {
+    background: #e03e0f;
+    transform: translateY(-4px);
+}
+.project:hover .contact-button {
+    background: #e03e0f;
+}
+
+
+
+
+.dash {
+    position: absolute; /* Position it absolutely */
+    top: 20px; 
+    left: 20px; 
+    z-index: 10; 
+}
+
+.dashboard-link {
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
+    border: 1px solid rgb(20, 18, 18);
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.dashboard-link:hover {
+    background-color: #fff;
+    color: black;
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: 0.6s;
+    box-shadow: 10px 10px 15px #fff;
+}
