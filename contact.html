@@ -5,12 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "7vqagZPbfjDVRi1nS",
+      });
+   })();
+</script>
 </head>
 <body>
     <header class="header">
         <a href="index.html" class="dashboard-link">Dashboard</a>
-        <p>On Process to send message.I know up to HTML CSS  </p>
-    <p>Java Script need for sending message("Learning")</p>
+       
         <h1>Contact Me</h1>
         <p>You can reach me at any time through the following contact details</p>
         <p>I am available to discuss opportunities and collaborations in areas related to software development and technology.</p>
@@ -48,19 +57,23 @@
                     <form action="">
                         <h2>Send Message</h2>
                         <div class="form-fields">
-                            <input type="text" id="FullName" placeholder="Full Name">
-                            <input type="email" id="Email" placeholder="Email">
-                            <input type="tel" id="Phone" placeholder="0000000000">
+                            <input type="text" id="FullName" placeholder="Enter your name">
+                            <input type="email" id="Email" placeholder="Enter your email">
+                             <input type="tel" id="Phone" placeholder="Enter your phone">
+
+
                             <textarea name="Comments" id="Comments" rows="4" cols="30" placeholder="Your message"></textarea><br>
                         </div>
                         <div class="buttons">
                             <input type="reset" value="Reset">
-                            <input type="submit" value="Submit">
+                            <input type="submit" onclick="sendMail(); return false;" value="Submit">
+
                         </div>
                     </form>
                 </td>
             </tr>
         </table>
     </section>
+    <script src="contact.js"> </script>
 </body>
 </html>
